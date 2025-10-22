@@ -33,7 +33,7 @@ const Portfolio = () => {
         </header>
 
         <div className="flex flex-1 justify-between items-center px-64">
-          <div className="max-w-lg mb-60">
+          <div className="max-w-lg mb-40">
             <h1 className="text-6xl font-light mb-4">Welcome.</h1>
             <p className="text-gray-400 text-2xl leading-relaxed">
               My name is Dean Giles. I'm a web developer based in NSW,
