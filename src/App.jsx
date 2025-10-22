@@ -1,10 +1,10 @@
 import "./App.css";
-import IntroCard from "./IntroCard";
+import Portfolio from "./Portfolio";
 
 function App() {
   return (
     <>
-      <IntroCard />
+      <Portfolio />
     </>
   );
 }

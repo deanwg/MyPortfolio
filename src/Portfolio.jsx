@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const IntroCard = () => {
+const Portfolio = () => {
   const projects = [
     { id: "mtg", name: "MTG Deck Builder" },
     { id: "todo", name: "Todo Application" },
@@ -67,15 +67,15 @@ const IntroCard = () => {
           {new Date().getFullYear()} Dean Giles
         </footer>
 
-        <div className="absolute top-56 left-24 w-48 h-48 border-t-4 border-l-4 border-orange-400 rounded-br-lg" />
-        <div className="absolute bottom-56 right-24 w-48 h-48 border-b-4 border-r-4 border-orange-400 rounded-tl-lg" />
+        <div className="absolute top-12 left-12 w-48 h-48 border-t-4 border-l-4 border-orange-400 rounded-br-lg" />
+        <div className="absolute bottom-12 right-12 w-48 h-48 border-b-4 border-r-4 border-orange-400 rounded-tl-lg" />
       </section>
       <section
         ref={sectionRefs.mtg}
         id="mtg"
         className="h-screen flex flex-row items-center justify-center bg-gray-800"
       >
-        <div className="flex flex-col w-1/2 px-24 space-y-2">
+        <div className="flex flex-col w-1/2 px-24 space-y-5">
           <h2 className="text-6xl font-bold">MTG Deck Builder</h2>
           <p className="text-3xl text-gray-300">
             My first complex application built. Some inefficiencies and
@@ -91,7 +91,7 @@ const IntroCard = () => {
             <a
               href="https://mtgdeckbuilder-deans-projects-902e8e04.vercel.app/"
               target="_blank"
-              className="py-2 hover:text-orange-400 hover:underline text-gray-300 text-lg"
+              className="p-2 outline rounded-2xl hover:text-orange-400 hover:underline text-gray-300 text-lg"
             >
               Live Demo
             </a>
@@ -116,4 +116,4 @@ const IntroCard = () => {
   );
 };
 
-export default IntroCard;
+export default Portfolio;
