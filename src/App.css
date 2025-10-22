@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.projectText {
+  color: rgb(223, 223, 223);
+  font-size: x-large;
+}

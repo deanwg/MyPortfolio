@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "./App.css";
 
 const Portfolio = () => {
   const projects = [
@@ -53,7 +54,7 @@ const Portfolio = () => {
                 <li key={p.id}>
                   <button
                     onClick={() => scrollToSection(p.id)}
-                    className="text-gray-300 hover:text-orange-400  hover:underline"
+                    className="text-gray-300 hover:text-orange-400  hover:underline hover:cursor-pointer"
                   >
                     {p.name}
                   </button>
@@ -76,13 +77,13 @@ const Portfolio = () => {
         className="h-screen flex flex-row items-center justify-center bg-gray-800"
       >
         <div className="flex flex-col w-1/2 px-24 space-y-5">
-          <h2 className="text-6xl font-bold">MTG Deck Builder</h2>
-          <p className="text-3xl text-gray-300">
-            My first complex application built. Some inefficiencies and
-            potential learner mistakes but a solid app to put out that I'm happy
-            with.
+          <h2 className="title">MTG Deck Builder</h2>
+          <p className="projectText">
+            My first complex application built. This application has room for
+            improvement but a good exercise for myself to learn new skills, and
+            also learn where i do need to develop.
           </p>
-          <p className="text-3xl text-gray-300">
+          <p className="projectText">
             A Magic: The Gathering deck builder with a Scryfall API search
             functionality, deck overlay, and quantity editing. Built with React
             + Vite, Tailwind, and Zustand.
@@ -110,7 +111,34 @@ const Portfolio = () => {
         id="todo"
         className="h-screen flex items-center justify-center bg-gray-900"
       >
-        <h2 className="text-3xl font-bold">Todo App</h2>
+        <div className="flex flex-col w-1/2 px-24 space-y-5">
+          <h2 className="title">Todo App</h2>
+          <p className="projectText">
+            A Simple Todo application that began my portfolio and
+            experimentation into React development
+          </p>
+          <p className="projectText">
+            Built with React, TailwindCSS, Material UI, and Framer Motion. This
+            app allows users to add, edit, delete, mark tasks as completed,
+            reorder todos via drag-and-drop, and remove all completed tasks.
+          </p>
+          <div>
+            <a
+              href="https://todo-lovat-delta-71.vercel.app/"
+              target="_blank"
+              className="p-2 outline rounded-2xl hover:text-orange-400 hover:underline text-gray-300 text-lg"
+            >
+              Live Demo
+            </a>
+          </div>
+        </div>
+        <div className="relative">
+          <img
+            src="/todoApp.png"
+            alt="Todo Application Screenshot"
+            className="rounded-lg shadow-lg w-160"
+          />
+        </div>
       </section>
     </div>
   );
