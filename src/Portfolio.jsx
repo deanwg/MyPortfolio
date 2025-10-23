@@ -88,13 +88,20 @@ const Portfolio = () => {
             functionality, deck overlay, and quantity editing. Built with React
             + Vite, Tailwind, and Zustand.
           </p>
-          <div>
+          <div className="flex flex-row space-x-2">
             <a
               href="https://mtgdeckbuilder-deans-projects-902e8e04.vercel.app/"
               target="_blank"
-              className="p-2 outline rounded-2xl hover:text-orange-400 hover:underline text-gray-300 text-lg"
+              className="button"
             >
               Live Demo
+            </a>
+            <a
+              href="https://github.com/deanwg/mtgdeckbuilder"
+              target="_blank"
+              className="button"
+            >
+              Github
             </a>
           </div>
         </div>
@@ -122,13 +129,20 @@ const Portfolio = () => {
             app allows users to add, edit, delete, mark tasks as completed,
             reorder todos via drag-and-drop, and remove all completed tasks.
           </p>
-          <div>
+          <div className="flex flex-row space-x-2">
             <a
               href="https://todo-lovat-delta-71.vercel.app/"
               target="_blank"
-              className="p-2 outline rounded-2xl hover:text-orange-400 hover:underline text-gray-300 text-lg"
+              className="button"
             >
               Live Demo
+            </a>
+            <a
+              href="https://github.com/deanwg/todo"
+              target="_blank"
+              className="button"
+            >
+              Github
             </a>
           </div>
         </div>
